@@ -21,4 +21,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/file-upload', 'FileController@index');
+Route::get('/my-files', 'FileController@list_of_files');
+
 Route::post('store', 'FileController@store');
